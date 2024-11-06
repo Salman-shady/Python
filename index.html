@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 500px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FERRARI, LAMBORGHINI or MERCEDES Game</h1>
+        <p>Choose FERRARI (F), LAMBORGHINI (L), or MERCEDES (M)</p>
+        
+        <div class="btn-group my-3">
+            <button class="btn btn-primary" onclick="playGame('F')">FERRARI (F)</button>
+            <button class="btn btn-danger" onclick="playGame('L')">LAMBORGHINI (L)</button>
+            <button class="btn btn-dark" onclick="playGame('M')">MERCEDES (M)</button>
+        </div>
+        
+        <div id="result" class="my-3"></div>
+
+        <div class="audio-controls">
+            <audio id="initialAudio" controls>
+                <source src="WhatsApp Audio 2023-01-08 at 13.56.05.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
